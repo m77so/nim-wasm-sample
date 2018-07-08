@@ -1,0 +1,11 @@
+<script src="pascal.js"></script>
+<script>
+setTimeout(()=>{
+  var result = Module.ccall('pascal', // name of C function
+  'number', // return type
+  ['number','number'], // argument types
+  [10,5]);
+  console.log(result);
+},1000)
+
+</script>
